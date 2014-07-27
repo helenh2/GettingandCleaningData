@@ -13,7 +13,7 @@ This is a markdown documents aiming at describing relevant variables, the data, 
 
 1. Preparations
 
- This step downloaded, unZip and import relevant files as listed under __README.md Raw input files__ section. One final dataset for each group with the combination of subjects, activity and all variables were produced.
+ This step downloaded, unZip and import relevant files as listed under __README.md__ _### Raw input files_ section. One final dataset for each group with the combination of subjects, activity and all variables were produced.
 
 2. Merges the training and the test sets to create one data set
  

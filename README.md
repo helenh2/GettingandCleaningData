@@ -1,16 +1,14 @@
 GettingandCleaningData
 ======================
 
-Coursera project work subject "Getting and Cleanning Data"
 ==================================================================
-Version 1.0
-By author: Helen
+Version 1.1
 ==================================================================
 
 This project requirements can be found from Coursera assignment link as below:
 https://class.coursera.org/getdata-005/human_grading/view/courses/972582/assessments/3/submissions
 
-original data source is from:
+Acknowledging the original data source from:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 
@@ -54,9 +52,11 @@ Quick facts on data in this work:
 ### Variables
 - there are 561 variables supplied with input data.
 - output data only kept mean() or std() relevant variables from input.
-==================================================================
+- each subject and activity were measures with these variables.
 
-Notes:
-- Codebook.MD will describe more workflow and coding details.
-- Full wrok on this project is available from: https://github.com/helenh2/GettingandCleaningData
+Additional info:
+==================================================================
+- Codebook with details on workflow and coding is also available for this project
+- R script for this project refers to "run_analysis.R"
+- All documents relates to this project is online at: https://github.com/helenh2/GettingandCleaningData
 
