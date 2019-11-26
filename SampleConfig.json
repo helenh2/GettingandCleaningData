@@ -1,0 +1,3637 @@
+{
+  "revision" : 9107,
+  "mappings" : [ {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_baln_avrg_3m"
+    },
+    "spine" : {
+      "name" : "ACCT_BALN_AVRG_3M"
+    },
+    "pega" : {
+      "name" : "AcctBalnAvrg3M"
+    },
+    "freshness" : "P2D",
+    "description" : "Average account balance over last three month"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 5
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_bsb"
+    },
+    "spine" : {
+      "name" : "ACCT_BSB"
+    },
+    "pega" : {
+      "name" : "AccountBSB"
+    },
+    "freshness" : "P2D",
+    "description" : "Bsb number of the account"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 10
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_bsb_rdct"
+    },
+    "spine" : {
+      "name" : "ACCT_BSB_RDCT"
+    },
+    "pega" : {
+      "name" : "AccountBSBRedirect"
+    },
+    "freshness" : "P2D",
+    "description" : "Redirect BSB for Account BSB"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_bsb_vald_flag"
+    },
+    "spine" : {
+      "name" : "ACCT_BSB_VALD_FLAG"
+    },
+    "pega" : {
+      "name" : "AccountBSBValid"
+    },
+    "freshness" : "P2D",
+    "description" : "Account BSB validation flag (For allocator)"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_clse_date"
+    },
+    "spine" : {
+      "name" : "ACCT_CLSE_DATE"
+    },
+    "pega" : {
+      "name" : "AcctCloseDate"
+    },
+    "freshness" : "P2D",
+    "description" : "Account Closed Date"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 5
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_cncy"
+    },
+    "spine" : {
+      "name" : "ACCT_CNCY"
+    },
+    "pega" : {
+      "name" : "AccountCurrency"
+    },
+    "freshness" : "P2D",
+    "description" : "Currency tagged to the account"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_curr_baln_amt"
+    },
+    "spine" : {
+      "name" : "ACCT_CURR_BALN_AMT"
+    },
+    "pega" : {
+      "name" : "AcctCurrBalanceAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "The account balance of a SAP account on T-1 day"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_curr_baln_date"
+    },
+    "spine" : {
+      "name" : "ACCT_CURR_BALN_DATE"
+    },
+    "pega" : {
+      "name" : "AcctCurrBalnDate"
+    },
+    "freshness" : "P2D",
+    "description" : "The date on which account balance feature generated of a SAP account on T-1 day"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 20
+    },
+    "omnia" : {
+      "name" : "cep_aar.dnt_acct_dept_rprt_type"
+    },
+    "spine" : {
+      "name" : "ACCT_DEPT_RPRT_TYPE"
+    },
+    "pega" : {
+      "name" : "AcctDeptReportType"
+    },
+    "freshness" : "P2D",
+    "description" : "Account level feature to identify the department report type of Deposit/Transaction account"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_dtdr_12m_cnt"
+    },
+    "spine" : {
+      "name" : "ACCT_DTDR_12M_CNT"
+    },
+    "pega" : {
+      "name" : "NumDtDrTranLast12m"
+    },
+    "freshness" : "P2D",
+    "description" : "Count of direct debit transactions from the account in the last 12 months."
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_dtdr_6m_cnt"
+    },
+    "spine" : {
+      "name" : "ACCT_DTDR_6M_CNT"
+    },
+    "pega" : {
+      "name" : "NumDtDrTranLast6m"
+    },
+    "freshness" : "P2D",
+    "description" : "Count of direct debit transactions from the account in the last 6 months."
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_fraud_stop_date"
+    },
+    "spine" : {
+      "name" : "ACCT_FRAUD_STOP_DATE"
+    },
+    "pega" : {
+      "name" : "AcctFraudStopDate"
+    },
+    "freshness" : "P2D",
+    "description" : "Date when the fraud/security stop was applied to the account"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_id_stop_date"
+    },
+    "spine" : {
+      "name" : "ACCT_ID_STOP_DATE"
+    },
+    "pega" : {
+      "name" : "AcctIdStopDate"
+    },
+    "freshness" : "P2D",
+    "description" : "Date when the ID stop was applied to the account"
+  }, {
+    "type" : {
+      "type" : "BooleanString"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_in_coll_flag"
+    },
+    "spine" : {
+      "name" : "ACCT_IN_COLL_FLAG"
+    },
+    "pega" : {
+      "name" : "CCInCollection"
+    },
+    "freshness" : "P2D",
+    "description" : "Credit card is in collections as managed by The Collections System.  Account can be delinquent, over-limit or contacted by collection.  "
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 20
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_l5_pdct_code"
+    },
+    "spine" : {
+      "name" : "ACCT_L5_PDCT_CODE"
+    },
+    "pega" : {
+      "name" : "AccountL5PdctCode"
+    },
+    "freshness" : "P2D",
+    "description" : "L5 level Product Code of the account"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 20
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_l6_pdct_code"
+    },
+    "spine" : {
+      "name" : "ACCT_L6_PDCT_CODE"
+    },
+    "pega" : {
+      "name" : "AccountL6PdctCode"
+    },
+    "freshness" : "P2D",
+    "description" : "L6 Product code of the account"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 100
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_l6_pdct_desc"
+    },
+    "spine" : {
+      "name" : "ACCT_L6_PDCT_DESC"
+    },
+    "pega" : {
+      "name" : "AccountL6PdctDescription"
+    },
+    "freshness" : "P2D",
+    "description" : "Description of the L6 level product code of account"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_mnly_fee_cnt_qtlr"
+    },
+    "spine" : {
+      "name" : "ACCT_MNLY_FEE_CNT_QTLR"
+    },
+    "pega" : {
+      "name" : "AcctMnlyFeeCntQtlr"
+    },
+    "freshness" : "P2D",
+    "description" : "This provides the count of the monthly account fees charged during last 3 months."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 4
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_moo"
+    },
+    "spine" : {
+      "name" : "ACCT_MOO"
+    },
+    "pega" : {
+      "name" : "AcctMoo"
+    },
+    "freshness" : "P2D",
+    "description" : "This attribute flags if the customer Term Deposit account Method of Operation is SINGLE or a MULTIPLE Signatures required from the SAP Term Deposit details table"
+  }, {
+    "type" : {
+      "type" : "BooleanString"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_offr_schl_bnki_flag"
+    },
+    "spine" : {
+      "name" : "ACCT_OFFR_SCHL_BNKI_FLAG"
+    },
+    "pega" : {
+      "name" : "SchoolBankingAccount"
+    },
+    "freshness" : "P1D",
+    "description" : "School banking account flag"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_ofi_atm_wthd_30d_cnt"
+    },
+    "spine" : {
+      "name" : "ACCT_OFI_ATM_WTHD_30D_CNT"
+    },
+    "pega" : {
+      "name" : "NumOFIATMWdrwlLast30d"
+    },
+    "freshness" : "P2D",
+    "description" : "Count of ATM withdrawals from ATMs owned by other financial institutions from the account in last 30 days."
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_ofi_atm_wthd_90d_cnt"
+    },
+    "spine" : {
+      "name" : "ACCT_OFI_ATM_WTHD_90D_CNT"
+    },
+    "pega" : {
+      "name" : "NumOFIATMWdrwlLast90d"
+    },
+    "freshness" : "P2D",
+    "description" : "Count of ATM withdrawals from ATMs owned by other financial institutions from the account in last 90 days."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_onln_stmt_flag"
+    },
+    "spine" : {
+      "name" : "ACCT_ONLN_STMT_FLAG"
+    },
+    "pega" : {
+      "name" : "CCHasOnlineStatement"
+    },
+    "freshness" : "P2D",
+    "description" : "Is the credit card account set to recieve online statement (Y/N)"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_open_date"
+    },
+    "spine" : {
+      "name" : "ACCT_OPEN_DATE"
+    },
+    "pega" : {
+      "name" : "AccountOpenDate"
+    },
+    "freshness" : "P2D",
+    "description" : "Account Opened Date"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 4
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_orig_chnl_type_code"
+    },
+    "spine" : {
+      "name" : "ACCT_ORIG_CHNL_TYPE_CODE"
+    },
+    "pega" : {
+      "name" : "AccountOrigChannelType"
+    },
+    "freshness" : "P2D",
+    "description" : "Account's origination channel type code"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_orig_fund_date"
+    },
+    "spine" : {
+      "name" : "ACCT_ORIG_FUND_DATE"
+    },
+    "pega" : {
+      "name" : "AcctOrigFundDate"
+    },
+    "freshness" : "P2D",
+    "description" : "This is the date that the account first got a deposit. If not yet funded will contain the account open date"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 64
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_orig_staf_id"
+    },
+    "spine" : {
+      "name" : "ACCT_ORIG_STAF_ID"
+    },
+    "pega" : {
+      "name" : "AcctOrigStaffId"
+    },
+    "freshness" : "P2D",
+    "description" : "StaffID of the staff member who originated the account"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_otc_dep_ipdm_brch_cnt"
+    },
+    "spine" : {
+      "name" : "ACCT_OTC_DEP_IPDM_BRCH_CNT"
+    },
+    "pega" : {
+      "name" : "NumOTCDepIDMBrchL90d"
+    },
+    "freshness" : "P2D",
+    "description" : "Count of Over-the-counter deposits at a branch which has an Intelligent Deposit Machine from this account in the last 90 days. See US7260"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_out_coll_date"
+    },
+    "spine" : {
+      "name" : "ACCT_OUT_COLL_DATE"
+    },
+    "pega" : {
+      "name" : "CCOutCollectionDate"
+    },
+    "freshness" : "P2D",
+    "description" : "The date that credit card account is out of collection.  If the credit card is not currently in collections, but was previously in collections, the date that collections were satisfied."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 10
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_pdct_code"
+    },
+    "spine" : {
+      "name" : "ACCT_PDCT_CODE"
+    },
+    "pega" : {
+      "name" : "AccountProductCode"
+    },
+    "freshness" : "P2D",
+    "description" : "Product Code of the account"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_prev_baln_amt"
+    },
+    "spine" : {
+      "name" : "ACCT_PREV_BALN_AMT"
+    },
+    "pega" : {
+      "name" : "AcctPrevDayBalnAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "The account balance of a SAP account on T-2 day"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_prev_baln_date"
+    },
+    "spine" : {
+      "name" : "ACCT_PREV_BALN_DATE"
+    },
+    "pega" : {
+      "name" : "AcctPrevDayBalnDate"
+    },
+    "freshness" : "P2D",
+    "description" : "The date on which account balance feature generated of a SAP account on T-2 day"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_pric_optn_code"
+    },
+    "spine" : {
+      "name" : "ACCT_PRIC_OPTN_CODE"
+    },
+    "pega" : {
+      "name" : "AcctPricingOptionCode"
+    },
+    "freshness" : "P2D",
+    "description" : "Account Price Option code"
+  }, {
+    "type" : {
+      "type" : "BooleanString"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_qna_bta_flag"
+    },
+    "spine" : {
+      "name" : "ACCT_QNA_BTA_FLAG"
+    },
+    "pega" : {
+      "name" : "IsBTAQNA"
+    },
+    "freshness" : "P2D",
+    "description" : "Whether this BTA account has qualified for QNA status."
+  }, {
+    "type" : {
+      "type" : "BooleanString"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_qna_flag"
+    },
+    "spine" : {
+      "name" : "ACCT_QNA_FLAG"
+    },
+    "pega" : {
+      "name" : "AcctQNAFlg"
+    },
+    "freshness" : "P2D",
+    "description" : "Flag indicating whether a transaction account opened via digital channels has turned QNA. Value is either 'Y' or 'N'"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 4
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_rout_brch"
+    },
+    "spine" : {
+      "name" : "ACCT_ROUT_BRCH"
+    },
+    "pega" : {
+      "name" : "AccountRoutingBranch"
+    },
+    "freshness" : "P2D",
+    "description" : "Account routing branch.\n\nFor deposit products, it is same as managed branch (ACCT_DEPT_ROLE_C = ‘MNGE’)\nFor lending products, it is same as maintained branch (ACCT_DEPT_ROLE_C = ‘MNTN’)"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 64
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_sales_dept_id"
+    },
+    "spine" : {
+      "name" : "ACCT_SALES_DEPT_ID"
+    },
+    "pega" : {
+      "name" : "AcctSalesDeptID"
+    },
+    "freshness" : "P2D",
+    "description" : "Department/branch where the account originated from"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 10
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_sale_pdct_id"
+    },
+    "spine" : {
+      "name" : "ACCT_SALE_PDCT_ID"
+    },
+    "pega" : {
+      "name" : "CreditCardSaleProductID"
+    },
+    "freshness" : "P2D",
+    "description" : "Credit Card Sale Product ID"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_sav_dep_amt_30d"
+    },
+    "spine" : {
+      "name" : "ACCT_SAV_DEP_AMT_30D"
+    },
+    "pega" : {
+      "name" : "AcctSavDepAmt30D"
+    },
+    "freshness" : "P2D",
+    "description" : "Total amount deposited to the savings account in the last 30 days"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_sav_dep_amt_60d"
+    },
+    "spine" : {
+      "name" : "ACCT_SAV_DEP_AMT_60D"
+    },
+    "pega" : {
+      "name" : "AcctSavDepAmt60D"
+    },
+    "freshness" : "P2D",
+    "description" : "Total amount deposited to the savings account in the last 60 days"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_sav_dep_amt_6m"
+    },
+    "spine" : {
+      "name" : "ACCT_SAV_DEP_AMT_6M"
+    },
+    "pega" : {
+      "name" : "AcctSavDepAmt6Months"
+    },
+    "freshness" : "P2D",
+    "description" : "Total amount deposited to the savings account in the last 6 months"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_sav_dep_amt_curr_mth"
+    },
+    "spine" : {
+      "name" : "ACCT_SAV_DEP_AMT_CURR_MTH"
+    },
+    "pega" : {
+      "name" : "AcctSavDepAmtCurrMth"
+    },
+    "freshness" : "P2D",
+    "description" : "Total amount deposited to the savings account in the current month"
+  }, {
+    "type" : {
+      "type" : "DenseDate"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_stop_expy_date"
+    },
+    "spine" : {
+      "name" : "ACCT_STOP_EXPY_DATE"
+    },
+    "pega" : {
+      "name" : "AcctStopExpyDate"
+    },
+    "freshness" : "P2D",
+    "description" : "Expiry date for account stop (this is the end_d in GDW PVDATA.ACCT_STUS_HIST table)."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 50
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_stus"
+    },
+    "spine" : {
+      "name" : "ACCT_STUS"
+    },
+    "pega" : {
+      "name" : "AccountStatus"
+    },
+    "freshness" : "P2D",
+    "description" : "Account Status (like: Open / Close / Active)"
+  }, {
+    "type" : {
+      "type" : "DenseDate"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_stus_chng_date"
+    },
+    "spine" : {
+      "name" : "ACCT_STUS_CHNG_DATE"
+    },
+    "pega" : {
+      "name" : "AccountStatusChangeDate"
+    },
+    "freshness" : "P2D",
+    "description" : "Account Status Change Date"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_totl_cr_30d_amt"
+    },
+    "spine" : {
+      "name" : "ACCT_TOTL_CR_30D_AMT"
+    },
+    "pega" : {
+      "name" : "AccountTotalCr30DAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "Sum of transaction amounts for all credit transactions (e.g. deposits, transfers in, salary credits) against account in the last 30 days. NULL for no transactions"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_totl_cr_60d_amt"
+    },
+    "spine" : {
+      "name" : "ACCT_TOTL_CR_60D_AMT"
+    },
+    "pega" : {
+      "name" : "AccountTotalCr60DAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "Sum of transaction amounts for all credit transactions (e.g. deposits, transfers in, salary credits) against account in the last 60 days. NULL for no transactions"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_totl_cr_90d_cnt"
+    },
+    "spine" : {
+      "name" : "ACCT_TOTL_CR_90D_CNT"
+    },
+    "pega" : {
+      "name" : "NumCreditsLast90d"
+    },
+    "freshness" : "P2D",
+    "description" : "Count of customer initiated credit transactions (e.g. deposits) to the account in last 90 days."
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_totl_dr_90d_cnt"
+    },
+    "spine" : {
+      "name" : "ACCT_TOTL_DR_90D_CNT"
+    },
+    "pega" : {
+      "name" : "NumDebitsLast90d"
+    },
+    "freshness" : "P2D",
+    "description" : "Count of customer initiated debit transactions (e.g. withdrawals) to the account in last 90 days."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 10
+    },
+    "omnia" : {
+      "name" : "cep_aar.card_busn_name"
+    },
+    "spine" : {
+      "name" : "CARD_BUSN_NAME"
+    },
+    "pega" : {
+      "name" : "CardBusinessName"
+    },
+    "freshness" : "P2D",
+    "description" : "Type of Card, i.e.Debit or Credit"
+  }, {
+    "type" : {
+      "type" : "DenseDate"
+    },
+    "omnia" : {
+      "name" : "cep_aar.card_issu_date"
+    },
+    "spine" : {
+      "name" : "CARD_ISSU_DATE"
+    },
+    "pega" : {
+      "name" : "CardIssueDate"
+    },
+    "freshness" : "P2D",
+    "description" : "Card Issue Date (this covers Travel Money Cards only)\n"
+  }, {
+    "type" : {
+      "type" : "DenseDate"
+    },
+    "omnia" : {
+      "name" : "cep_aar.card_ordr_date"
+    },
+    "spine" : {
+      "name" : "CARD_ORDR_DATE"
+    },
+    "pega" : {
+      "name" : "CardOrderDate"
+    },
+    "freshness" : "P2D",
+    "description" : "Card Order Date"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_12m_amex_cpnn_card_spen"
+    },
+    "spine" : {
+      "name" : "CCS_12M_AMEX_CPNN_CARD_SPEN"
+    },
+    "pega" : {
+      "name" : "Ccs12MAmexCpnnCardSpen"
+    },
+    "freshness" : "P2D",
+    "description" : "This attribute provides the spending of the Amex companion card in one year associated with a VISA/Master Card ."
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_3m_avrg_spen"
+    },
+    "spine" : {
+      "name" : "CCS_3M_AVRG_SPEN"
+    },
+    "pega" : {
+      "name" : "CCAvg3MonthSpend"
+    },
+    "freshness" : "P2D",
+    "description" : "3-month average spend on credit card account"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 5
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_acct_migr_stus"
+    },
+    "spine" : {
+      "name" : "CCS_ACCT_MIGR_STUS"
+    },
+    "pega" : {
+      "name" : "CcsAcctMigrStus"
+    },
+    "freshness" : "P2D",
+    "description" : "This attribute defines the status of the credit card account in terms of the migration process Values eg example P = Pending, A = activated"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 20
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_amex_cpnn_card"
+    },
+    "spine" : {
+      "name" : "CCS_AMEX_CPNN_CARD"
+    },
+    "pega" : {
+      "name" : "CcsAmexCpnnCard"
+    },
+    "freshness" : "P2D",
+    "description" : "This attribute provides Amex companinon card number linked to the VISA/Master credit card"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_apay_code"
+    },
+    "spine" : {
+      "name" : "CCS_APAY_CODE"
+    },
+    "pega" : {
+      "name" : "CCAutoPayCode"
+    },
+    "freshness" : "P2D",
+    "description" : "The AutoPay code set up on a credit card"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 16
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_apay_dr_acct"
+    },
+    "spine" : {
+      "name" : "CCS_APAY_DR_ACCT"
+    },
+    "pega" : {
+      "name" : "CcsApayDrAcct"
+    },
+    "freshness" : "P2D",
+    "description" : "This attribute represents direct debit Account number  which has been setup as part of the regular credit card auto payment."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 9
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_apay_dr_bsb"
+    },
+    "spine" : {
+      "name" : "CCS_APAY_DR_BSB"
+    },
+    "pega" : {
+      "name" : "CcsApayDrBsb"
+    },
+    "freshness" : "P2D",
+    "description" : "This attribute represents direct debit BSB of the account number  which has been setup as part of the regular credit card auto payment."
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_baln_trfr_actv_cnt"
+    },
+    "spine" : {
+      "name" : "CCS_BALN_TRFR_ACTV_CNT"
+    },
+    "pega" : {
+      "name" : "CCBTCount"
+    },
+    "freshness" : "P2D",
+    "description" : "This active count is the number of balance transfers currently active on the credit card account. A rate is currently active if it has not been paid off and it has not been migrated to another plan."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_baln_trfr_expy_flag"
+    },
+    "spine" : {
+      "name" : "CCS_BALN_TRFR_EXPY_FLAG"
+    },
+    "pega" : {
+      "name" : "CCBTExpiryFlag"
+    },
+    "freshness" : "P2D",
+    "description" : "A balance transfer plan provides a discounted interest rate for a specific period of time for balances that are transferred from a non-CBA Australian credit card.\nEach plan has a term (in months) which is the number of bill cycles the rate is valid for. Once the plan has reached it's term the balance of the plan will be transferred to the cash advance interest rate.\nThis flag will be set to Y when an account has one or more balance transfer plans that are due to expire. Due to expire is defined as the number of times billed being one less than the term."
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_baln_trfr_expy_int_rate"
+    },
+    "spine" : {
+      "name" : "CCS_BALN_TRFR_EXPY_INT_RATE"
+    },
+    "pega" : {
+      "name" : "CCBTExpiryIntRate"
+    },
+    "freshness" : "P2D",
+    "description" : "This interest rate will be set to the interest rate of the credit card balance transfer due to expire. In the unlikely event of there being 2 different interest rates, the interest rate will be set to null."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 8
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_bill_code"
+    },
+    "spine" : {
+      "name" : "CCS_BILL_CODE"
+    },
+    "pega" : {
+      "name" : "CCBillCode"
+    },
+    "freshness" : "P2D",
+    "description" : "Credit card bill code"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 2
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_blok_rcls_code"
+    },
+    "spine" : {
+      "name" : "CCS_BLOK_RCLS_CODE"
+    },
+    "pega" : {
+      "name" : "CCBlockCode"
+    },
+    "freshness" : "P2D",
+    "description" : "Credit Card Account Current Block Code.  This is a 2 character code derived by the concatenation of the GCPS Block Code and GCPS Reclass Code. If either field is null or blank it is replaced with an underscore."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_card_schm_code"
+    },
+    "spine" : {
+      "name" : "CCS_CARD_SCHM_CODE"
+    },
+    "pega" : {
+      "name" : "CCCardScheme"
+    },
+    "freshness" : "P2D",
+    "description" : "The card scheme of a credit card i.e. A (for Amex), V (for Visa)"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_cnt_of_paty"
+    },
+    "spine" : {
+      "name" : "CCS_CNT_OF_PATY"
+    },
+    "pega" : {
+      "name" : "CrediCardAcctHolderCnt"
+    },
+    "freshness" : "P2D",
+    "description" : "Count of customers tied to the credit card account (BCA010, ZBCA10, BCA040, BCA045)"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 5
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_coll_clas"
+    },
+    "spine" : {
+      "name" : "CCS_COLL_CLAS"
+    },
+    "pega" : {
+      "name" : "CcsCollClas"
+    },
+    "freshness" : "P2D",
+    "description" : "This feature represents credit card account collection class code. Code OPENP indicates that Credit Card Account is on a Payment Plan."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 20
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_cpgn_code"
+    },
+    "spine" : {
+      "name" : "CCS_CPGN_CODE"
+    },
+    "pega" : {
+      "name" : "CcsCpgnCode"
+    },
+    "freshness" : "P2D",
+    "description" : "This attribute defines current offer code associate with credit card, such as special pricing or wealth package"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_cr_limt_amt"
+    },
+    "spine" : {
+      "name" : "CCS_CR_LIMT_AMT"
+    },
+    "pega" : {
+      "name" : "CCCreditLimit"
+    },
+    "freshness" : "P2D",
+    "description" : "Credit limit on a credit card account"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_cr_limt_utls_avg_30_day"
+    },
+    "spine" : {
+      "name" : "CCS_CR_LIMT_UTLS_AVG_30_DAY"
+    },
+    "pega" : {
+      "name" : "AvgCCUtilisation30Days"
+    },
+    "freshness" : "P2D",
+    "description" : "Average Credit Card Utilisation (in percentage) over last 30 days"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_cr_limt_utls_avg_60_day"
+    },
+    "spine" : {
+      "name" : "CCS_CR_LIMT_UTLS_AVG_60_DAY"
+    },
+    "pega" : {
+      "name" : "AvgCCUtilisation60Days"
+    },
+    "freshness" : "P2D",
+    "description" : "Average Credit Card Utilisation (in percentage) over last 60 days"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_cr_limt_utls_avg_90_day"
+    },
+    "spine" : {
+      "name" : "CCS_CR_LIMT_UTLS_AVG_90_DAY"
+    },
+    "pega" : {
+      "name" : "AvgCCUtilisation90Days"
+    },
+    "freshness" : "P2D",
+    "description" : "Average Credit Card Utilisation (in percentage) over last 90 days"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_curr_expy_year_mnth"
+    },
+    "spine" : {
+      "name" : "CCS_CURR_EXPY_YEAR_MNTH"
+    },
+    "pega" : {
+      "name" : "CCExpiryYearMonth"
+    },
+    "freshness" : "P2D",
+    "description" : "Credit card expiry Year and Month –\nExample values:\n201809\n202211\nnull"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_cycl_due_amt"
+    },
+    "spine" : {
+      "name" : "CCS_CYCL_DUE_AMT"
+    },
+    "pega" : {
+      "name" : "CCCycleDueAmount"
+    },
+    "freshness" : "P2D",
+    "description" : "CC Payment Cycle Due Amount"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_grat_rate_actv_cnt"
+    },
+    "spine" : {
+      "name" : "CCS_GRAT_RATE_ACTV_CNT"
+    },
+    "pega" : {
+      "name" : "CCGreatRateCount"
+    },
+    "freshness" : "P2D",
+    "description" : "This active count is the number of great rates currently active on the credit card account. A rate is currently active if it has not been paid off and it has not been migrated to another plan."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_grat_rate_expy_flag"
+    },
+    "spine" : {
+      "name" : "CCS_GRAT_RATE_EXPY_FLAG"
+    },
+    "pega" : {
+      "name" : "CCGreatRateExpiryFlag"
+    },
+    "freshness" : "P2D",
+    "description" : "A great rate is a special rate applied to part of a credit card's balance.\nEach plan has a term (in months) which is the number of bill cycles the rate is valid for. Once the plan has reached it's term the balance of the plan will be transferred to the purchase rate.\nThis flag will be set to Y when an credit card account has one or more great rate plans that are due to expire. Due to expire is defined as the number of times billed being one less than the term."
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_grat_rate_expy_int_rate"
+    },
+    "spine" : {
+      "name" : "CCS_GRAT_RATE_EXPY_INT_RATE"
+    },
+    "pega" : {
+      "name" : "CCGreatRateExpiryIntRate"
+    },
+    "freshness" : "P2D",
+    "description" : "This interest rate will be set to the interest rate of the great rate due to expire. In the unlikely event of there being 2 different interest rates, the interest rate will be set to null."
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_last_blok_date"
+    },
+    "spine" : {
+      "name" : "CCS_LAST_BLOK_DATE"
+    },
+    "pega" : {
+      "name" : "CCLastBlockCodeDate"
+    },
+    "freshness" : "P2D",
+    "description" : "The date that the system or an operator last updated the credit card account’s block or reclass code."
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_last_cr_limt_chng_date"
+    },
+    "spine" : {
+      "name" : "CCS_LAST_CR_LIMT_CHNG_DATE"
+    },
+    "pega" : {
+      "name" : "CCCreditLimitLastChangeDate"
+    },
+    "freshness" : "P2D",
+    "description" : "The last changed date of credit limit on a credit card"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 10
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_misc_fied1"
+    },
+    "spine" : {
+      "name" : "CCS_MISC_FIED1"
+    },
+    "pega" : {
+      "name" : "CcsMiscFied1"
+    },
+    "freshness" : "P2D",
+    "description" : "This attribute provide information about Credit card account associate with compassion."
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_payt_due_date"
+    },
+    "spine" : {
+      "name" : "CCS_PAYT_DUE_DATE"
+    },
+    "pega" : {
+      "name" : "CCPaymentDueDate"
+    },
+    "freshness" : "P2D",
+    "description" : "credit card payment due date"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 255
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_pdct_card_fmly"
+    },
+    "spine" : {
+      "name" : "CCS_PDCT_CARD_FMLY"
+    },
+    "pega" : {
+      "name" : "CreditCardFamily"
+    },
+    "freshness" : "P2D",
+    "description" : "Credit Card Family"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 255
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_pdct_card_type"
+    },
+    "spine" : {
+      "name" : "CCS_PDCT_CARD_TYPE"
+    },
+    "pega" : {
+      "name" : "CCCardType"
+    },
+    "freshness" : "P2D",
+    "description" : "The card type of a credit card i.e. AFFINITY AWARDS,QANTAS BUSINESS CARD "
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 3
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_pdct_code"
+    },
+    "spine" : {
+      "name" : "CCS_PDCT_CODE"
+    },
+    "pega" : {
+      "name" : "CreditCardProductCode"
+    },
+    "freshness" : "P2D",
+    "description" : "Product code of the credit card account"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_prev_bill_date"
+    },
+    "spine" : {
+      "name" : "CCS_PREV_BILL_DATE"
+    },
+    "pega" : {
+      "name" : "CCPreviousBillDate"
+    },
+    "freshness" : "P2D",
+    "description" : "The due date of previous bill on a credit card"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_prev_bill_full_amt_due"
+    },
+    "spine" : {
+      "name" : "CCS_PREV_BILL_FULL_AMT_DUE"
+    },
+    "pega" : {
+      "name" : "CCPreviousBillAmount"
+    },
+    "freshness" : "P2D",
+    "description" : "The full amount due on previous bill of a credit card"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 5
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_rssu_denl_code"
+    },
+    "spine" : {
+      "name" : "CCS_RSSU_DENL_CODE"
+    },
+    "pega" : {
+      "name" : "CcsRssuDenlCode"
+    },
+    "freshness" : "P2D",
+    "description" : "This attribute defines the reason the system denied plastic reissue for credit card account"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 5
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_spec_flag4"
+    },
+    "spine" : {
+      "name" : "CCS_SPEC_FLAG4"
+    },
+    "pega" : {
+      "name" : "CcsSpecFlag4"
+    },
+    "freshness" : "P2D",
+    "description" : "This attribute is for credit card account associate with special pricing on annual fee, late fee or interest rate.  null values indicates no special price applied."
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_spen_cap_amt"
+    },
+    "spine" : {
+      "name" : "CCS_SPEN_CAP_AMT"
+    },
+    "pega" : {
+      "name" : "CreditCardSpendCapLimit"
+    },
+    "freshness" : "P2D",
+    "description" : "The spending cap limit set up on a credit card account"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 3
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_sub_pdct_code"
+    },
+    "spine" : {
+      "name" : "CCS_SUB_PDCT_CODE"
+    },
+    "pega" : {
+      "name" : "CCSubProductCode"
+    },
+    "freshness" : "P2D",
+    "description" : "Credit card sub-product code"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.ccs_unpd_min_payt_due_amt"
+    },
+    "spine" : {
+      "name" : "CCS_UNPD_MIN_PAYT_DUE_AMT"
+    },
+    "pega" : {
+      "name" : "CCMinPaymentOverdue"
+    },
+    "freshness" : "P2D",
+    "description" : "Credit card account's total amount past due five days or more.  The system zeroes this field if a collector enters a fixed payment block/reclass and amount for the account."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 3
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_cif_pdct_code"
+    },
+    "spine" : {
+      "name" : "CIF_PDCT_CODE"
+    },
+    "pega" : {
+      "name" : "CIFProductCode"
+    },
+    "freshness" : "P2D",
+    "description" : "CIF Product Code : Part of composite Key DO NOT REMOVE - renamed Pega Name from CIFPdctCode"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 3
+    },
+    "omnia" : {
+      "name" : "cep_aar.cif_sub_pdct_code"
+    },
+    "spine" : {
+      "name" : "CIF_SUB_PDCT_CODE"
+    },
+    "pega" : {
+      "name" : "CIFSubProductCode"
+    },
+    "freshness" : "P2D",
+    "description" : "The CIF sub product code is part of the product code, and it identifies the variants of the CIF products"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.clg_prop_for_rent_hl_acct_flag"
+    },
+    "spine" : {
+      "name" : "CLG_PROP_FOR_RENT_HL_ACCT_FLAG"
+    },
+    "pega" : {
+      "name" : "ClgPropForRentHLAcctFlag"
+    },
+    "freshness" : "P2D",
+    "description" : "Home loan account level falg to show this account has related property currently for rent"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.clg_prop_sale_hl_acct_flag"
+    },
+    "spine" : {
+      "name" : "CLG_PROP_SALE_HL_ACCT_FLAG"
+    },
+    "pega" : {
+      "name" : "ClgPropForSaleHLAcctFlag"
+    },
+    "freshness" : "P2D",
+    "description" : "Related HL Account of Security Address Listed For Sale "
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.clg_prop_sold_hl_acct_flag"
+    },
+    "spine" : {
+      "name" : "CLG_PROP_SOLD_HL_ACCT_FLAG"
+    },
+    "pega" : {
+      "name" : "ClgPropSoldHLAcctFlag"
+    },
+    "freshness" : "P2D",
+    "description" : "Core Logic data that shows a property is sold related to a particular HL"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 50
+    },
+    "omnia" : {
+      "name" : "cep_aar.crcd_segm"
+    },
+    "spine" : {
+      "name" : "CRCD_SEGM"
+    },
+    "pega" : {
+      "name" : "CreditCardSegment"
+    },
+    "freshness" : "P60D",
+    "description" : "Classifies the credit card into segments i.e. Flipper, Revolver, Transactor, High Risk, etc."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 2
+    },
+    "omnia" : {
+      "name" : "cep_aar.csc_cli_acct_cndt_code"
+    },
+    "spine" : {
+      "name" : "CSC_CLI_ACCT_CNDT_CODE"
+    },
+    "pega" : {
+      "name" : "CLIAccountConduct"
+    },
+    "freshness" : "P2D",
+    "description" : "CLI Account Conduct "
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 2
+    },
+    "omnia" : {
+      "name" : "cep_aar.csc_cli_elgl_grup_code"
+    },
+    "spine" : {
+      "name" : "CSC_CLI_ELGL_GRUP_CODE"
+    },
+    "pega" : {
+      "name" : "CLIEligibilityGroup"
+    },
+    "freshness" : "P2M",
+    "description" : "CLI Eligibility Group"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 40
+    },
+    "omnia" : {
+      "name" : "cep_aar.csc_cli_elgl_idnn"
+    },
+    "spine" : {
+      "name" : "CSC_CLI_ELGL_IDNN"
+    },
+    "pega" : {
+      "name" : "CLIOfferID"
+    },
+    "freshness" : "P2M",
+    "description" : "A unique identifier for all accounts that have been run through the Commscore Credit Limit Increase program.\nThis is loaded to CEE and then passed downstream for reporting and other purposes.\nThe format is the account number left padded to 20 characters followed by the date in yyyymmdd format. This format may change so should not be used for any other purpose than as a CLI elgibility identifier."
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.csc_cli_offr_date"
+    },
+    "spine" : {
+      "name" : "CSC_CLI_OFFR_DATE"
+    },
+    "pega" : {
+      "name" : "CLIOfferDate"
+    },
+    "freshness" : "P2M",
+    "description" : "CLI Offer Date"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.csc_cli_offr_limt_amt"
+    },
+    "spine" : {
+      "name" : "CSC_CLI_OFFR_LIMT_AMT"
+    },
+    "pega" : {
+      "name" : "CLIOfferLimit"
+    },
+    "freshness" : "P2M",
+    "description" : "CLI Offer Limit"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.day_in_td_hold_fcly"
+    },
+    "spine" : {
+      "name" : "DAY_IN_TD_HOLD_FCLY"
+    },
+    "pega" : {
+      "name" : "DaysInTDHoldingFacility"
+    },
+    "freshness" : "P1D",
+    "description" : "This attribute calculates the number of days the Term Deposit account has been in the holding facility. A Holding Facility is when the TD matures, the balance is moved to a lower interest rate."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.fms_acct_orig_code"
+    },
+    "spine" : {
+      "name" : "FMS_ACCT_ORIG_CODE"
+    },
+    "pega" : {
+      "name" : "FmsAcctOrigCode"
+    },
+    "freshness" : "P2D",
+    "description" : "Code to indicate of the account originated from an Individual or an Employer."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 10
+    },
+    "omnia" : {
+      "name" : "cep_aar.fms_init_chnl_code"
+    },
+    "spine" : {
+      "name" : "FMS_INIT_CHNL_CODE"
+    },
+    "pega" : {
+      "name" : "FmsInitChnlCode"
+    },
+    "freshness" : "P2D",
+    "description" : "Account originating channel type code: Online, Branch, or Transitioned from another account."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 512
+    },
+    "omnia" : {
+      "name" : "cep_aar.hash_ccs_curr_expy_year_mnth"
+    },
+    "spine" : {
+      "name" : "HASH_CCS_CURR_EXPY_YEAR_MNTH"
+    },
+    "pega" : {
+      "name" : "HashCCExpiryYearMonth"
+    },
+    "freshness" : "P2D",
+    "description" : "This field contains the encrypted value of the Card Expiry Date."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_acct_agnt_segm"
+    },
+    "spine" : {
+      "name" : "HLS_ACCT_AGNT_SEGM"
+    },
+    "pega" : {
+      "name" : "HLSAccountAgntSegm"
+    },
+    "freshness" : "P2D",
+    "description" : "Values can be\n0 – No Segment, not agent/staff linked to account\n1 – Home Loan Solution Segment (owner agent currently is a HLS)\n2 – Home Loan Solution Segment (owner agent currently is non-current HLS)\n3 – Mobile Lender Segment (staff currently is a mobile lender)\n4 – Mortgage Brokers, dbst_type = 'MOR'\n5 – Others\n"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 4
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_appt_brch"
+    },
+    "spine" : {
+      "name" : "HLS_APPT_BRCH"
+    },
+    "pega" : {
+      "name" : "HLSApplicationBranch"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Application branch.\n\nBranch where the original loan was written and where the general ledger account is held\n*in Range (2000 - 7999)\nAlso includes 1800 as HomePath loans"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 15
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_appt_numb"
+    },
+    "spine" : {
+      "name" : "HLS_APPT_NUMB"
+    },
+    "pega" : {
+      "name" : "HLSApplicationNumber"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Application number."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_auto_rcst_flag"
+    },
+    "spine" : {
+      "name" : "HLS_AUTO_RCST_FLAG"
+    },
+    "pega" : {
+      "name" : "HLSAutomaticRecastFlag"
+    },
+    "freshness" : "P2D",
+    "description" : "\t\nHLS Automatic recast flag.\n\nIndicates if Loan is to have an Automatic recast applied.\nValues Y/N."
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_aval_rdrw_amt"
+    },
+    "spine" : {
+      "name" : "HLS_AVAL_RDRW_AMT"
+    },
+    "pega" : {
+      "name" : "HLSAvailableRedrawAmount"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Available redraw amount."
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_bvr_matu_date"
+    },
+    "spine" : {
+      "name" : "HLS_BVR_MATU_DATE"
+    },
+    "pega" : {
+      "name" : "BVRMaturitydate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS BVR Expiry date feature is the maturity date for the Home lending Base variable rate accounts "
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_cba_is_scnd_mrtg_flag"
+    },
+    "spine" : {
+      "name" : "HLS_CBA_IS_SCND_MRTG_FLAG"
+    },
+    "pega" : {
+      "name" : "HLSCBAIsSecondMortgageeFlag"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS CBA is second mortgagee flag.\nIndicates if the CBA is the 2nd mortgagee.\nValues Y/N."
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_cnct_rpay_amt"
+    },
+    "spine" : {
+      "name" : "HLS_CNCT_RPAY_AMT"
+    },
+    "pega" : {
+      "name" : "HLSContactRepaymentAmount"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Contract repayment amount.\nThis is the raw monthly amount required to repay the Loan Balance (excluding fees/charges/insurance)."
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_cnt_of_all_paty"
+    },
+    "spine" : {
+      "name" : "HLS_CNT_OF_ALL_PATY"
+    },
+    "pega" : {
+      "name" : "HLCntOfAllPaty"
+    },
+    "freshness" : "P2D",
+    "description" : "Number of distinct customers for the HL account"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_cnt_of_corr_paty"
+    },
+    "spine" : {
+      "name" : "HLS_CNT_OF_CORR_PATY"
+    },
+    "pega" : {
+      "name" : "HLCntOfCorrPaty"
+    },
+    "freshness" : "P2D",
+    "description" : "Number of distinct customers who have the BCA030 role code for the HL Account"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_defr_estb_fee_date"
+    },
+    "spine" : {
+      "name" : "HLS_DEFR_ESTB_FEE_DATE"
+    },
+    "pega" : {
+      "name" : "HLSDeferredEstablishmentFeeDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS deferred establishment fee date."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 6
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_dr_acct_bsb"
+    },
+    "spine" : {
+      "name" : "HLS_DR_ACCT_BSB"
+    },
+    "pega" : {
+      "name" : "HLSDebitAccountBSB"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS debit account BSB.\nThe bank state branch number for the debiting account."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 9
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_dtdr_acct"
+    },
+    "spine" : {
+      "name" : "HLS_DTDR_ACCT"
+    },
+    "pega" : {
+      "name" : "HlsDtdrAcct"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Debit Account Number."
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_dtdr_rpay_amt"
+    },
+    "spine" : {
+      "name" : "HLS_DTDR_RPAY_AMT"
+    },
+    "pega" : {
+      "name" : "HLSDirectDebitRepaymentAmount"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS direct debit repayment amount.\nThis is the amount to be debited from relevant DE account on the next repayment date"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_dtdr_rpay_vary_amt"
+    },
+    "spine" : {
+      "name" : "HLS_DTDR_RPAY_VARY_AMT"
+    },
+    "pega" : {
+      "name" : "HLSDirectDebitRepayVariationAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS direct debt repayment variation amount."
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_dtdr_rpay_vary_date"
+    },
+    "spine" : {
+      "name" : "HLS_DTDR_RPAY_VARY_DATE"
+    },
+    "pega" : {
+      "name" : "HLSDtdrRpayVaryDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Direct debit repayment variation date."
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_dynm_lvr_ohl"
+    },
+    "spine" : {
+      "name" : "HLS_DYNM_LVR_OHL"
+    },
+    "pega" : {
+      "name" : "HLLoanToValueRatioOHL"
+    },
+    "freshness" : "P2D",
+    "description" : "Identify the Loan to Value ratio for a customer on an Owner Occupied Home Loan. This is not applicable to Investment Home Loan. Identify the current loan to value ratio."
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_expt_mnth_rpay_due_amt"
+    },
+    "spine" : {
+      "name" : "HLS_EXPT_MNTH_RPAY_DUE_AMT"
+    },
+    "pega" : {
+      "name" : "HlsExptMnthRpayDueAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "This is the minimum monthly repayment amount when a customer is paying their HL on a weekly or  fortnightly frequency."
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_fix_term_mtur_date"
+    },
+    "spine" : {
+      "name" : "HLS_FIX_TERM_MATU_DATE"
+    },
+    "pega" : {
+      "name" : "HLFixTermMatuDate"
+    },
+    "freshness" : "P2D",
+    "description" : "This will be the fixed term maturity date for Fixed Term home loans as well as discount maturity date for variable home loans types"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_frst_rdrw_date"
+    },
+    "spine" : {
+      "name" : "HLS_FRST_RDRW_DATE"
+    },
+    "pega" : {
+      "name" : "HLSFrstRdrawDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS First redraw date.\nThis is the date of the first drawing from the Undrawn Balance"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_fxrt_spec_rpay_limt_amt"
+    },
+    "spine" : {
+      "name" : "HLS_FXRT_SPEC_RPAY_LIMT_AMT"
+    },
+    "pega" : {
+      "name" : "HLSFxrtSpecRPayLimtAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Fixed rate special repayment limit amount.\nSpecial repayment amount limit. Used for Fixed rate loans."
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_fxrt_spec_rpay_year_amt"
+    },
+    "spine" : {
+      "name" : "HLS_FXRT_SPEC_RPAY_YEAR_AMT"
+    },
+    "pega" : {
+      "name" : "HLSFxrtSpecRpayYearAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Fixed rate special repayment yearly amount.\nUsed for Fixed rate loans. Total of special repayments for the year (anniversary is maturity date DDMM)."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_gntr_xist_flag"
+    },
+    "spine" : {
+      "name" : "HLS_GNTR_XIST_FLAG"
+    },
+    "pega" : {
+      "name" : "HLSGntrXistFlag"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Guarantors exist flag.\nValues Y/N"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_init_ismt_due_date"
+    },
+    "spine" : {
+      "name" : "HLS_INIT_ISMT_DUE_DATE"
+    },
+    "pega" : {
+      "name" : "HLSInitIsmtDueDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Initial instalment due date.\nSystem generated when the loan becomes fully funded or repayments commence.If loan is funded between 1st - 28th ( inclusive ) the IDD is set to the corresponding day in the month immediately following date of funding. If funded between 29th - 31st ( inclusive ) IDD is set to the 1st of the month following the month after loan is funded. \nEg: Funding date 30th May- IDD will be set to the 1st July.\nDay of the month when IDD is set can also be selected by borrowers at initial input of loan."
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_int_in_advn_due_date"
+    },
+    "spine" : {
+      "name" : "HLS_INT_IN_ADVN_DUE_DATE"
+    },
+    "pega" : {
+      "name" : "HLSIntInAdvnDueDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Interest in advance due date"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_int_in_advn_matu_date"
+    },
+    "spine" : {
+      "name" : "HLS_INT_IN_ADVN_MATU_DATE"
+    },
+    "pega" : {
+      "name" : "HLSIntInAdvnMatuDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Interest in advance maturity date"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_int_in_advn_payt_amt"
+    },
+    "spine" : {
+      "name" : "HLS_INT_IN_ADVN_PAYT_AMT"
+    },
+    "pega" : {
+      "name" : "HLSIntInAdvnPaytAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Interest in advance payment amount"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_int_in_advn_strt_date"
+    },
+    "spine" : {
+      "name" : "HLS_INT_IN_ADVN_STRT_DATE"
+    },
+    "pega" : {
+      "name" : "HLSIntInAdvnStrtDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Interest in advance start date."
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_int_in_advn_term"
+    },
+    "spine" : {
+      "name" : "HLS_INT_IN_ADVN_TERM"
+    },
+    "pega" : {
+      "name" : "HLSIntAdvnTerm"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Interest in advance term"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_irto_expy_date"
+    },
+    "spine" : {
+      "name" : "HLS_IRTO_EXPY_DATE"
+    },
+    "pega" : {
+      "name" : "HLSIntOnlyExpyDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS interest only period expiry date."
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_irto_perd"
+    },
+    "spine" : {
+      "name" : "HLS_IRTO_PERD"
+    },
+    "pega" : {
+      "name" : "HLSIntOnlyPeriod"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Interest only period in months"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_irto_strt_date"
+    },
+    "spine" : {
+      "name" : "HLS_IRTO_STRT_DATE"
+    },
+    "pega" : {
+      "name" : "HLSIntOnlyStartDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Interest only period start date"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 2
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_ismt_type_code"
+    },
+    "spine" : {
+      "name" : "HLS_ISMT_TYPE_CODE"
+    },
+    "pega" : {
+      "name" : "HLSInstTypeCode"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Instalment type code"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_ismt_vary_amt"
+    },
+    "spine" : {
+      "name" : "HLS_ISMT_VARY_AMT"
+    },
+    "pega" : {
+      "name" : "HLSInstVarAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Instalment variation amount"
+  }, {
+    "type" : {
+      "type" : "Long"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_land_valn_amt"
+    },
+    "spine" : {
+      "name" : "HLS_LAND_VALN_AMT"
+    },
+    "pega" : {
+      "name" : "HLSLandValAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Land valuation amount"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_last_ismt_due_amt"
+    },
+    "spine" : {
+      "name" : "HLS_LAST_ISMT_DUE_AMT"
+    },
+    "pega" : {
+      "name" : "HLSLastInstDueAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Last instalment due date"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 10
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_lend_type_code"
+    },
+    "spine" : {
+      "name" : "HLS_LEND_TYPE_CODE"
+    },
+    "pega" : {
+      "name" : "HLLendTypeCode"
+    },
+    "freshness" : "P2D",
+    "description" : ""
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_loan_amt_chng_date"
+    },
+    "spine" : {
+      "name" : "HLS_LOAN_AMT_CHNG_DATE"
+    },
+    "pega" : {
+      "name" : "HLSLoanAmtChngDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Loan amount change date"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_loan_fund_stus_code"
+    },
+    "spine" : {
+      "name" : "HLS_LOAN_FUND_STUS_CODE"
+    },
+    "pega" : {
+      "name" : "HLSLoanFundStatusCode"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Loan funding status code"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_loan_prot_code"
+    },
+    "spine" : {
+      "name" : "HLS_LOAN_PROT_CODE"
+    },
+    "pega" : {
+      "name" : "HLSLoanProtCode"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Loan protection code\n\nIndicates whether the loan is insured\n•0 = loan not insured\n•1 = application to insure\n•2 = premium paid\n•3 = contract held - full term\n•4 = contract held - 5 year term"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 2
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_loan_prot_co_numb"
+    },
+    "spine" : {
+      "name" : "HLS_LOAN_PROT_CO_NUMB"
+    },
+    "pega" : {
+      "name" : "HLSLoanProtCoNumb"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Loan protection company number.\n\nThe company number that provides the loan insurance\n *company number as defined on System Control File\n•01 = HLIC\n•02 = AMIC\n•03 = MGIC\n•04 = GMCO + others as defined by Users"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 10
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_loan_purp_code"
+    },
+    "spine" : {
+      "name" : "HLS_LOAN_PURP_CODE"
+    },
+    "pega" : {
+      "name" : "HLLoanPurpCode"
+    },
+    "freshness" : "P2D",
+    "description" : "Captures the loan purpose (i.e. Construction of a dwelling, purchase of an existing dwelling, alterations/additions to a dwelling etc)"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_low_docu_loan_code"
+    },
+    "spine" : {
+      "name" : "HLS_LOW_DOCU_LOAN_CODE"
+    },
+    "pega" : {
+      "name" : "HLSLowDocuLoanCode"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Low documentation loan code\n•0 = Not a Low Doc loan\n•1 = Low Doc loan\n•2 = ?"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_lsf_flag"
+    },
+    "spine" : {
+      "name" : "HLS_LSF_FLAG"
+    },
+    "pega" : {
+      "name" : "HLSLsfFlag"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Loan service fee flag.\n\nPeriodical loan service fee charged to the loan - (monthly or yearly)\n•0 = no fee\n•1 = fee applicable"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_mobl_lend_curr_flag"
+    },
+    "spine" : {
+      "name" : "HLS_MOBL_LEND_CURR_FLAG"
+    },
+    "pega" : {
+      "name" : "HLSMobileLenderCurrFlag"
+    },
+    "freshness" : "P2D",
+    "description" : "Values  \n1:  Sale Staff is a Mobile Lender as of now\n2: Sale Staff was a mobile lender, but Is not a Mobile Lender  as of now\n0: not a mobile lender at all\n"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_next_ismt_due_amt"
+    },
+    "spine" : {
+      "name" : "HLS_NEXT_ISMT_DUE_AMT"
+    },
+    "pega" : {
+      "name" : "HLSNextIsmtDueAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Next instalment due amount.\n\nThis item is redefined\nSHL\n The amount due on the next Instalment Due Date.\n This amount is the amount payable as the next Fortnightly instalment.\nHL\n This is the minimum amount required to repay the loan within the contracted term.\n The amount in the field will always be the monthly amount.\n If the Monthly service fee is being debited to this loan then it is included in this amount.\n If Insurance is debited to the Home Loan, the amount of Insurance Premium and Stamp Duty is included in this field."
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_next_revw_date"
+    },
+    "spine" : {
+      "name" : "HLS_NEXT_REVW_DATE"
+    },
+    "pega" : {
+      "name" : "HLSNextRevwDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Next review date.\n\nThe date on which the loan is to be reviewed (3 yearly reviews)."
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_next_rpay_date"
+    },
+    "spine" : {
+      "name" : "HLS_NEXT_RPAY_DATE"
+    },
+    "pega" : {
+      "name" : "HLSNextRpayDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Next repayment date.\n\nThis item is redefined\nDate present only for Fortnightly and Weekly repayments. For Monthly use IDD day of the month"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_off_the_plan_flag"
+    },
+    "spine" : {
+      "name" : "HLS_OFF_THE_PLAN_FLAG"
+    },
+    "pega" : {
+      "name" : "HLSOffThePlanFlag"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Off the plan flag\nValues Y/N"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 64
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_orig_agnt_id"
+    },
+    "spine" : {
+      "name" : "HLS_ORIG_AGNT_ID"
+    },
+    "pega" : {
+      "name" : "HLOrigAgntId"
+    },
+    "freshness" : "P2D",
+    "description" : "Broker who originated the home loan"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_orig_full_fund_date"
+    },
+    "spine" : {
+      "name" : "HLS_ORIG_FULL_FUND_DATE"
+    },
+    "pega" : {
+      "name" : "HLSOrigFullFundDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Original full fundind date.\nOriginal Date of Funding letter date, before loan is TOP UP"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_orig_loan_appr_amt"
+    },
+    "spine" : {
+      "name" : "HLS_ORIG_LOAN_APPR_AMT"
+    },
+    "pega" : {
+      "name" : "HLApprovedAmount"
+    },
+    "freshness" : "P2D",
+    "description" : "The original approval amount for the Home Loan. This is not the amount the home loan was funded for."
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_orig_loan_term"
+    },
+    "spine" : {
+      "name" : "HLS_ORIG_LOAN_TERM"
+    },
+    "pega" : {
+      "name" : "HLSOrigLoanTerm"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Original loan term.\n\nSHL:\n The Original term of the Loan in months\nHL:\n The current Contracted Term of the Loan in months"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 10
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_orig_staf_numb"
+    },
+    "spine" : {
+      "name" : "HLS_ORIG_STAF_NUMB"
+    },
+    "pega" : {
+      "name" : "HLOrigStafNum"
+    },
+    "freshness" : "P2D",
+    "description" : "CBA staff who sold the home loan"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 10
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_own_agnt_catg"
+    },
+    "spine" : {
+      "name" : "HLS_OWN_AGNT_CATG"
+    },
+    "pega" : {
+      "name" : "HLOwnerAgentCategory"
+    },
+    "freshness" : "P2D",
+    "description" : "Home Loan Owner Agent Category describes the grading of the broker and the values can be:\nUnknown\nBronze\nSilver\nGold\nPlatinum\nDiamond"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 64
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_own_agnt_id"
+    },
+    "spine" : {
+      "name" : "HLS_OWN_AGNT_ID"
+    },
+    "pega" : {
+      "name" : "HLOwnAgntId"
+    },
+    "freshness" : "P2D",
+    "description" : "Broker who manages the home loan"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_payt_mthd_code"
+    },
+    "spine" : {
+      "name" : "HLS_PAYT_MTHD_CODE"
+    },
+    "pega" : {
+      "name" : "HLSPaymentMethodCode"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Payment method code\n•0 = Direct Debit\n•1 = Coupon Book\n•2 = Other\n"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_pend_irto_perd"
+    },
+    "spine" : {
+      "name" : "HLS_PEND_IRTO_PERD"
+    },
+    "pega" : {
+      "name" : "HLSInterestOnlyPeriod"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Interest only period\nInterest only period (in months) that will apply to a loan with a fixed term maturity date upon expiry of the current fixed period. This field is used when the customer wants to change from principal and interest repayments to interest only repayments on a loan with a fixed maturity date (ie. fixed rate, guaranteed rate , and existing Interest Only variable rate housing loans). Home loans that will not become interest only are defaulted to zero. The change from principal and interest repayments to interest only repayments is made upon expiry of the fixed period of the loan.\n"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_pend_rpay_amt"
+    },
+    "spine" : {
+      "name" : "HLS_PEND_RPAY_AMT"
+    },
+    "pega" : {
+      "name" : "HLSPendingRepaymentAmount"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Pending repayment amount.\nRepayment to be applied on loans that have a Maturity Date recorded and which is applied at Maturity Date.\n"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 2
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_pos_code"
+    },
+    "spine" : {
+      "name" : "HLS_POS_CODE"
+    },
+    "pega" : {
+      "name" : "HLSPointOfSaleCode"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Point of sale code.\n•01 - DIRECT BANKING ORIGINATED   \n•02 - MOBILE LENDER ORIGINATOR      \n•03 - BRANCH ORIGINATED       \n•04 - THIRD PARTY ORIGINATED  \n•05- BUSINESS BANKING       \n•06- CITIBANK       \n•07- CLIENT SUPP BANK       \n•08- COMMERCIAL CONVEY       \n•09- INNOVATORS       \n•10- PREM ADDVAN SERV       \n•11- PREM BANK INVEST SERV      \n•12- PRIV CLIENT SERV       \n•13- HOMEPATH       \n•14- INTERNET       \n•15- DIRECT MAIL\n•16 – Commonwealth Private Bank\n•17 – Corporate and Business Services\n•18 - PL FINEST ONLINE\n•19 – Wizard Home Loans\n•20 – Storm Loans\n"
+  }, {
+    "type" : {
+      "type" : "BooleanString"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_prgs_payt_flag"
+    },
+    "spine" : {
+      "name" : "HLS_PRGS_PAYT_FLAG"
+    },
+    "pega" : {
+      "name" : "HLSProgressivePaymentFlag"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Progressive payment flag\n\nValues Y/N\n\nN = multiple drawings not allowed\nY = multiple drawings allowed\n\nOn the 15th of each month, accrued interest is charged to Client’s nominated account.\nWhen the loan is fully funded, broken period interest is also charged to this account.  From this point on, interest is charged to the Loan Account on the Instalment Due Date\n"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_prme_irte"
+    },
+    "spine" : {
+      "name" : "HLS_PRME_IRTE"
+    },
+    "pega" : {
+      "name" : "HLSPrimeInterestRate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Prime interest rate.\n"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_rate_lock_expy_date"
+    },
+    "spine" : {
+      "name" : "HLS_RATE_LOCK_EXPY_DATE"
+    },
+    "pega" : {
+      "name" : "HLSRateLockExpiryDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Rate lock expiry date"
+  }, {
+    "type" : {
+      "type" : "BooleanString"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_remo_locn_flag"
+    },
+    "spine" : {
+      "name" : "HLS_REMO_LOCN_FLAG"
+    },
+    "pega" : {
+      "name" : "HLSRemoteLocationFlag"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Remote location flag.\n\nValues Y/N.\n\nSHLs only\nN = Normal Loan\nY = Branch at which Officer works and Postcode of Security Property are both desgnated as being a remote location\n"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_rmra_efft_date"
+    },
+    "spine" : {
+      "name" : "HLS_RMRA_EFFT_DATE"
+    },
+    "pega" : {
+      "name" : "HLSReqMinRepaymentAmtDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Required minimum repayment amount effective date.\n"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_rmra_vary_date"
+    },
+    "spine" : {
+      "name" : "HLS_RMRA_VARY_DATE"
+    },
+    "pega" : {
+      "name" : "HLSReqMinRepaymentVariationDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Required minimum repayment amount variation date."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_rpay_freq_code"
+    },
+    "spine" : {
+      "name" : "HLS_RPAY_FREQ_CODE"
+    },
+    "pega" : {
+      "name" : "HLSRepaymentFreqCode"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Repayment frequency code.\nIndicates how often repayments are made\nW = weekly\nF = fortnightly\nM = monthly"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_scnd_mrtg_code"
+    },
+    "spine" : {
+      "name" : "HLS_SCND_MRTG_CODE"
+    },
+    "pega" : {
+      "name" : "HLSSecondMortgageCode"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Second mortgage code.\nIndicates if there is a 2nd Mortgage on the security property\n0 = nil\n1 = second mortgage on security\n2 =  second mortgage to CBA"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 10
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_secu_type_code"
+    },
+    "spine" : {
+      "name" : "HLS_SECU_TYPE_CODE"
+    },
+    "pega" : {
+      "name" : "HLSecuTypeCode"
+    },
+    "freshness" : "P2D",
+    "description" : ""
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_secu_valn_amt"
+    },
+    "spine" : {
+      "name" : "HLS_SECU_VALN_AMT"
+    },
+    "pega" : {
+      "name" : "HLSSecurityValuationAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Security valuation amount.\nThe value of the property"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_seto_acct_baln_amt"
+    },
+    "spine" : {
+      "name" : "HLS_SETO_ACCT_BALN_AMT"
+    },
+    "pega" : {
+      "name" : "HLSSetOffBalanceAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Setoff account balance amount.\nCurrent  balance of  MISA / setoff account."
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_spec_rpay_amt"
+    },
+    "spine" : {
+      "name" : "HLS_SPEC_RPAY_AMT"
+    },
+    "pega" : {
+      "name" : "HLSSpecialRepaymentAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "\t\nHLS Special repayment amount.\nIf positive value represents the total special repayments amount.  That is repayments which are made over and above the Required Monthly Repayment amount. This value is stored in RMR Amount.\nIf a negative value it represents the actual amount of the arrears. The Amount Due Next Instalment or RMR Amount is deducted from this field on the IDD."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_spec_rpay_rdrw_flag"
+    },
+    "spine" : {
+      "name" : "HLS_SPEC_RPAY_RDRW_FLAG"
+    },
+    "pega" : {
+      "name" : "HLSSpecialRepaymentRedraw"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Special repayment redraw flag.\nValues Y/N.\nIndicates whether amount in Special Repayments may be “redrawn” by client.\nNote that only amounts of Special Repayments above $2000 are available for redraw.\nN = not available for redraw\nY = redraw available"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_staf_loan_code"
+    },
+    "spine" : {
+      "name" : "HLS_STAF_LOAN_CODE"
+    },
+    "pega" : {
+      "name" : "HLSStaffLoanCode"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Staff loan code\nIdentifies if staff are party to a loan , used in conjunction with the staff number field\n\nHousing Loans\n0 = non staff\n1 = staff concessional interest rate\n2 = Loan Taken by mobile banker\n3 = Loan taken by other staff Member\n9 = Edge Credit Score ID\nSHLs\n0 = nil repayments\n3 = weekly repayments\n4 = fortnightly repayments\n5-9 = not used"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_stat_code"
+    },
+    "spine" : {
+      "name" : "HLS_STAT_CODE"
+    },
+    "pega" : {
+      "name" : "HLSStateCode"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS State code.\nState or Territory where the loan is conducted\n1 = ACT\n2 = NSW\n3 = VIC\n4 = QLD\n5 = SA\n6 = WA\n7 = TAS\n8 = NT\n9 = Spare"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 4
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_stmt_reqd_ddmm"
+    },
+    "spine" : {
+      "name" : "HLS_STMT_REQD_DDMM"
+    },
+    "pega" : {
+      "name" : "HLStatementRequiredDayMonth"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Statement requested day and month.\nUsed if customer/s requests a particular day/month for a statement. Is in addition other statement issue triggers. Format is ddmm.  Eg, 2909"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 64
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_top_up_agnt_id"
+    },
+    "spine" : {
+      "name" : "HLS_TOP_UP_AGNT_ID"
+    },
+    "pega" : {
+      "name" : "HLTopUpAgntId"
+    },
+    "freshness" : "P2D",
+    "description" : "Broker who did top up of the home loan"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 4
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_top_up_brch"
+    },
+    "spine" : {
+      "name" : "HLS_TOP_UP_BRCH"
+    },
+    "pega" : {
+      "name" : "HLSTopUpBranch"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Top up branch.\nThe Branch to be credit/debit to GL for Top Up Loan"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_top_up_estb_date"
+    },
+    "spine" : {
+      "name" : "HLS_TOP_UP_ESTB_DATE"
+    },
+    "pega" : {
+      "name" : "HLSTopUpEstablismentDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Top up establishment date"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_top_up_loan_amt"
+    },
+    "spine" : {
+      "name" : "HLS_TOP_UP_LOAN_AMT"
+    },
+    "pega" : {
+      "name" : "HLSTopUpLoanAmount"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Top up loan amount"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_top_up_pend_flag"
+    },
+    "spine" : {
+      "name" : "HLS_TOP_UP_PEND_FLAG"
+    },
+    "pega" : {
+      "name" : "HLSTopUpPendingFlag"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Top up pending flag.\nValues Y/N"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_udrw_baln_amt"
+    },
+    "spine" : {
+      "name" : "HLS_UDRW_BALN_AMT"
+    },
+    "pega" : {
+      "name" : "HLSUdrwBalnAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Undrawn balance amount"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.hls_valn_date"
+    },
+    "spine" : {
+      "name" : "HLS_VALN_DATE"
+    },
+    "pega" : {
+      "name" : "HLSValnDate"
+    },
+    "freshness" : "P2D",
+    "description" : "HLS Valuation date.\nDate of valuation input to the system"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.pj_larg_cr_cba_to_cba_amt"
+    },
+    "spine" : {
+      "name" : "LARG_CR_CBA_TO_CBA_AMT"
+    },
+    "pega" : {
+      "name" : "LargeCreditFromCBAToCBAAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "Largest transfer from CBA to CBA in past 7 days"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.pj_larg_dr_cba_to_cba_amt"
+    },
+    "spine" : {
+      "name" : "LARG_DR_CBA_TO_CBA_AMT"
+    },
+    "pega" : {
+      "name" : "LargeDebitFromCBAToCBAAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "Largest transfer from CBA to CBA in past 7 days"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.pj_lrge_cr_cba_to_cba_date"
+    },
+    "spine" : {
+      "name" : "LRGE_CR_CBA_TO_CBA_DATE"
+    },
+    "pega" : {
+      "name" : "LargeCreditFromCBAToCBADate"
+    },
+    "freshness" : "P2D",
+    "description" : "The date on which largest amount transferred from CBA to CBA in past 7 days"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 20
+    },
+    "omnia" : {
+      "name" : "cep_aar.pj_lrge_cr_cba_to_cba_tran_code"
+    },
+    "spine" : {
+      "name" : "LRGE_CR_CBA_TO_CBA_TRAN_CODE"
+    },
+    "pega" : {
+      "name" : "LrgeCrdtFromCBAToCBATranCd"
+    },
+    "freshness" : "P2D",
+    "description" : "The transacton code for the largest amount transferred from CBA to CBA in past 7 days"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.pj_lrge_cr_cba_to_self_amt"
+    },
+    "spine" : {
+      "name" : "LRGE_CR_CBA_TO_SELF_AMT"
+    },
+    "pega" : {
+      "name" : "LrgeCrdtFromCBAToSelfAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "Largest transfer from CBA to Self in past 7 days"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.pj_lrge_cr_cba_to_self_date"
+    },
+    "spine" : {
+      "name" : "LRGE_CR_CBA_TO_SELF_DATE"
+    },
+    "pega" : {
+      "name" : "LrgeCrdtFromCBAToSelfDate"
+    },
+    "freshness" : "P2D",
+    "description" : "The date on which largest amount transferred from CBA to self in past 7 days"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 20
+    },
+    "omnia" : {
+      "name" : "cep_aar.pj_lrge_cr_cba_to_self_tran_code"
+    },
+    "spine" : {
+      "name" : "LRGE_CR_CBA_TO_SELF_TRAN_CD"
+    },
+    "pega" : {
+      "name" : "LrgeCrdtCBAToSelfTranCd"
+    },
+    "freshness" : "P2D",
+    "description" : "The transacton code for the largest amount transferred from CBA to self in past 7 days"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.pj_lrge_cr_ofi_to_cba_amt"
+    },
+    "spine" : {
+      "name" : "LRGE_CR_OFI_TO_CBA_AMT"
+    },
+    "pega" : {
+      "name" : "LargeCreditFromOFIToCBAAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "Largest transfer from OFI to CBA in past 7 days"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.pj_lrge_cr_ofi_to_cba_date"
+    },
+    "spine" : {
+      "name" : "LRGE_CR_OFI_TO_CBA_DATE"
+    },
+    "pega" : {
+      "name" : "LargeCreditFromOFIToCBADate"
+    },
+    "freshness" : "P2D",
+    "description" : "The date on which largest amount transferred from OFI to CBA in past 7 days   "
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 20
+    },
+    "omnia" : {
+      "name" : "cep_aar.pj_lrge_cr_ofi_to_cba_tran_code"
+    },
+    "spine" : {
+      "name" : "LRGE_CR_OFI_TO_CBA_TRAN_CODE"
+    },
+    "pega" : {
+      "name" : "LrgeCrdtFromOFIToCBATrnCd"
+    },
+    "freshness" : "P2D",
+    "description" : "The transacton code for the largest amount transferred from OFI to CBA in past 7 days"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.pj_lrge_dr_cba_to_cba_date"
+    },
+    "spine" : {
+      "name" : "LRGE_DR_CBA_TO_CBA_DATE"
+    },
+    "pega" : {
+      "name" : "LargeDebitFromCBAToCBADate"
+    },
+    "freshness" : "P2D",
+    "description" : "The date on which largest amount debited from CBA to CBA in past 7 days"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 20
+    },
+    "omnia" : {
+      "name" : "cep_aar.pj_lrge_dr_cba_to_cba_tran_code"
+    },
+    "spine" : {
+      "name" : "LRGE_DR_CBA_TO_CBA_TRAN_CODE"
+    },
+    "pega" : {
+      "name" : "LrgeDbtFromCBAToCBATrnCd"
+    },
+    "freshness" : "P2D",
+    "description" : "The transacton code for the largest amount debited from CBA to CBA in past 7 days"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.pj_lrge_dr_cba_to_ofi_amt"
+    },
+    "spine" : {
+      "name" : "LRGE_DR_CBA_TO_OFI_AMT"
+    },
+    "pega" : {
+      "name" : "LargeDebitFromCBAToOFIAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "Largest transfer from CBA to OFI in past 7 days"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.pj_lrge_dr_cba_to_ofi_date"
+    },
+    "spine" : {
+      "name" : "LRGE_DR_CBA_TO_OFI_DATE"
+    },
+    "pega" : {
+      "name" : "LargeDebitFromCbaToOfiDate"
+    },
+    "freshness" : "P2D",
+    "description" : "The date on which largest amount debited from CBA to OFI in past 7 days"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 20
+    },
+    "omnia" : {
+      "name" : "cep_aar.pj_lrge_dr_cba_to_ofi_tran_code"
+    },
+    "spine" : {
+      "name" : "LRGE_DR_CBA_TO_OFI_TRAN_CODE"
+    },
+    "pega" : {
+      "name" : "LrgeDbtFromCBAToOFITrnCd"
+    },
+    "freshness" : "P2D",
+    "description" : "The transacton code for the largest amount debited from CBA to OFI in past 7 days"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.max_ato_cr_payt_date"
+    },
+    "spine" : {
+      "name" : "MAX_ATO_CR_PAYT_DATE"
+    },
+    "pega" : {
+      "name" : "MaxAtoCrPaytDate"
+    },
+    "freshness" : "P2D",
+    "description" : "Latest Date ATO Payment was Credited to an Account in the last 18 months"
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.max_ato_dr_payt_date"
+    },
+    "spine" : {
+      "name" : "MAX_ATO_DR_PAYT_DATE"
+    },
+    "pega" : {
+      "name" : "MaxAtoDrPaytDate"
+    },
+    "freshness" : "P2D",
+    "description" : "Latest Date ATO Payment was Debited from an Account in the last 18 months"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 10
+    },
+    "omnia" : {
+      "name" : "cep_aar.dnt_mnge_bank_stat_brch"
+    },
+    "spine" : {
+      "name" : "MNGE_BANK_STAT_BRCH"
+    },
+    "pega" : {
+      "name" : "ManagingBSB"
+    },
+    "freshness" : "P2D",
+    "description" : "Account level feature to identify the branch number of a Debits/Transfer account"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 10
+    },
+    "omnia" : {
+      "name" : "cep_aar.mnge_brch_rdct"
+    },
+    "spine" : {
+      "name" : "MNGE_BRCH_RDCT"
+    },
+    "pega" : {
+      "name" : "ManagedBSBRedirect"
+    },
+    "freshness" : "P2D",
+    "description" : "Redirect for Managed BSB"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_aar.mnge_brch_vald_flag"
+    },
+    "spine" : {
+      "name" : "MNGE_BRCH_VALD_FLAG"
+    },
+    "pega" : {
+      "name" : "ManagedBSBValid"
+    },
+    "freshness" : "P2D",
+    "description" : "Managed BSB valication flag (For Allocator)"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.acct_otc_wthd_90d_cnt"
+    },
+    "spine" : {
+      "name" : "OTC_WDWL_90D_CNT"
+    },
+    "pega" : {
+      "name" : "NumOTCWdwlLast90d"
+    },
+    "freshness" : "P2D",
+    "description" : "Count of Over the Counter Withdrawals in the last 90 days from Account"
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 1
+    },
+    "omnia" : {
+      "name" : "cep_acr.tcs_prms_stus"
+    },
+    "spine" : {
+      "name" : "TCS_PRMS_STUS"
+    },
+    "pega" : {
+      "name" : "TcsPrmsStus"
+    },
+    "freshness" : "P2D",
+    "description" : "This attribute describes current promise status for a Credit Card account in collections."
+  }, {
+    "type" : {
+      "type" : "DenseDate"
+    },
+    "omnia" : {
+      "name" : "cep_aar.td_mtur_date"
+    },
+    "spine" : {
+      "name" : "TD_MTUR_DATE"
+    },
+    "pega" : {
+      "name" : "TDMatureDate"
+    },
+    "freshness" : "P1D",
+    "description" : "Term Deposit Maturity date. This is the date the TD will mature on."
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_all_dep_curr_mnth_amt"
+    },
+    "spine" : {
+      "name" : "TRAN_ALL_DEP_CURR_MNTH_AMT"
+    },
+    "pega" : {
+      "name" : "TranAllDepCurrMnthAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "total account deposit for the current month"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_ccs_pur_hce_90d_amt"
+    },
+    "spine" : {
+      "name" : "TRAN_CCS_PUR_HCE_90D_AMT"
+    },
+    "pega" : {
+      "name" : "HCETxn90DAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "Countactless HCE Transactions"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_ccs_pur_hce_90d_cnt"
+    },
+    "spine" : {
+      "name" : "TRAN_CCS_PUR_HCE_90D_CNT"
+    },
+    "pega" : {
+      "name" : "HCETxn90DCnt"
+    },
+    "freshness" : "P2D",
+    "description" : "Counts of HCE Transactions"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_ccs_pur_pyps_90d_amt"
+    },
+    "spine" : {
+      "name" : "TRAN_CCS_PUR_PYPS_90D_AMT"
+    },
+    "pega" : {
+      "name" : "PayPassTxn90DAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "Contactless Paypass Purchases"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_ccs_pur_pyps_90d_cnt"
+    },
+    "spine" : {
+      "name" : "TRAN_CCS_PUR_PYPS_90D_CNT"
+    },
+    "pega" : {
+      "name" : "PayPassTxn90DCnt"
+    },
+    "freshness" : "P2D",
+    "description" : "Count of PayPass Transactions"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_ccs_pur_pytg_90d_amt"
+    },
+    "spine" : {
+      "name" : "TRAN_CCS_PUR_PYTG_90D_AMT"
+    },
+    "pega" : {
+      "name" : "PayTagTxn90DAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "Count of Paytag Transactions"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_ccs_pur_pytg_90d_cnt"
+    },
+    "spine" : {
+      "name" : "TRAN_CCS_PUR_PYTG_90D_CNT"
+    },
+    "pega" : {
+      "name" : "PayTagTxn90DCnt"
+    },
+    "freshness" : "P2D",
+    "description" : "Count of Contactless paytag "
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_ccs_pur_tap_90d_amt"
+    },
+    "spine" : {
+      "name" : "TRAN_CCS_PUR_TAP_90D_AMT"
+    },
+    "pega" : {
+      "name" : "TapAndPayTranAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "Tap and Pay Transaction Amount"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_ccs_pur_tap_90d_cnt"
+    },
+    "spine" : {
+      "name" : "TRAN_CCS_PUR_TAP_90D_CNT"
+    },
+    "pega" : {
+      "name" : "TapAndPayTranCnt"
+    },
+    "freshness" : "P2D",
+    "description" : "Tap and Pay Transaction Count"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_fms_last_fund_amt"
+    },
+    "spine" : {
+      "name" : "TRAN_FMS_LAST_FUND_AMT"
+    },
+    "pega" : {
+      "name" : "TranFmsLastFundAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "This will provide the last amount contributed into the Essential Super account with date."
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_fms_last_fund_date"
+    },
+    "spine" : {
+      "name" : "TRAN_FMS_LAST_FUND_DATE"
+    },
+    "pega" : {
+      "name" : "TranFmsLastFundDate"
+    },
+    "freshness" : "P2D",
+    "description" : "This will provide the last amount contributed into the Essential Super account with date."
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_fms_last_rolv_amt"
+    },
+    "spine" : {
+      "name" : "TRAN_FMS_LAST_ROLV_AMT"
+    },
+    "pega" : {
+      "name" : "TranFmsLastRolvAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "This will provide the last rollover amount contributed into the Essential Super account with date."
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_fms_last_rolv_date"
+    },
+    "spine" : {
+      "name" : "TRAN_FMS_LAST_ROLV_DATE"
+    },
+    "pega" : {
+      "name" : "TranFmsLastRolvDate"
+    },
+    "freshness" : "P2D",
+    "description" : "This will provide the last rollover amount contributed into the Essential Super account with date."
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_fms_last_sg_amt"
+    },
+    "spine" : {
+      "name" : "TRAN_FMS_LAST_SG_AMT"
+    },
+    "pega" : {
+      "name" : "TranFmsLastSgAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "\t\n\t\nThis will provide the last super guarantee amount contributed into the Essential Super account with date."
+  }, {
+    "type" : {
+      "type" : "Date"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_fms_last_sg_date"
+    },
+    "spine" : {
+      "name" : "TRAN_FMS_LAST_SG_DATE"
+    },
+    "pega" : {
+      "name" : "TranFmsLastSgDate"
+    },
+    "freshness" : "P2D",
+    "description" : "\t\nThis will provide the last super guarantee amount contributed into the Essential Super account with date."
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_hls_dep_amt"
+    },
+    "spine" : {
+      "name" : "TRAN_HLS_DEP_AMT"
+    },
+    "pega" : {
+      "name" : "LoanDepositedAmount"
+    },
+    "freshness" : "P2D",
+    "description" : "Total amount deposited for each loan account, from the loan issue date to present."
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_hls_dep_cnt"
+    },
+    "spine" : {
+      "name" : "TRAN_HLS_DEP_CNT"
+    },
+    "pega" : {
+      "name" : "NumOfLoanDepositsMade"
+    },
+    "freshness" : "P2D",
+    "description" : "Total count of deposit transactions for each loan account , from loan issue date to present."
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_sap_bill_paid_180d_amt"
+    },
+    "spine" : {
+      "name" : "TRAN_SAP_BILL_PAID_180D_AMT"
+    },
+    "pega" : {
+      "name" : "TranBillPaidLast180DAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "Total amount of bill paid transactions in the last 180 days for SAP accounts. \nIncludes transactions with Transaction Category Description in 'BPAY', 'Direct Debits', 'Scheduled Payments' AND Customer Initiated Transaction Flag = 'Y'.\nTransaction Source System Code is 'PJN' (Payment Journal)."
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_sap_bill_paid_180d_cnt"
+    },
+    "spine" : {
+      "name" : "TRAN_SAP_BILL_PAID_180D_CNT"
+    },
+    "pega" : {
+      "name" : "TranBillPaidLast180DCnt"
+    },
+    "freshness" : "P2D",
+    "description" : "Transaction count of bill paid transactions in the last 180 days for SAP accounts.\nIncludes transactions with Transaction Category Description in 'BPAY', 'Direct Debits', 'Scheduled Payments' and Customer Initiated Transaction Flag = 'Y'.\nTransaction Source System Code is 'PJN' (Payment Journal)."
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_sap_dep_otc_idpm_40d_cnt"
+    },
+    "spine" : {
+      "name" : "TRAN_SAP_DEP_OTC_IDPM_40D_CNT"
+    },
+    "pega" : {
+      "name" : "TranSapDepOtcIdpm40dCnt"
+    },
+    "freshness" : "P2D",
+    "description" : "Aggregated count of OTC deposits with IDPM in last 40 days"
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_sap_dep_qc_idpm_40d_cnt"
+    },
+    "spine" : {
+      "name" : "TRAN_SAP_DEP_QC_IDPM_40D_CNT"
+    },
+    "pega" : {
+      "name" : "TranSapDepQcIdpm40dCnt"
+    },
+    "freshness" : "P2D",
+    "description" : "Aggregated count of Quick Cash deposits in last 40 days"
+  }, {
+    "type" : {
+      "type" : "Double"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_sap_dtdr_180d_amt"
+    },
+    "spine" : {
+      "name" : "TRAN_SAP_DTDR_180D_AMT"
+    },
+    "pega" : {
+      "name" : "TranDtDrLast180DAmt"
+    },
+    "freshness" : "P2D",
+    "description" : "\t\nTotal amount of direct debit transactions in the last 180 days for SAP accounts.\nIncludes transactions with Transaction Category Description = 'Direct Debits' and Customer Initiated Transaction Flag = 'Y'.\nTransaction Source System Code is 'PJN' (Payment Journal)."
+  }, {
+    "type" : {
+      "type" : "Integer"
+    },
+    "omnia" : {
+      "name" : "cep_aar.tran_sap_dtdr_180d_cnt"
+    },
+    "spine" : {
+      "name" : "TRAN_SAP_DTDR_180D_CNT"
+    },
+    "pega" : {
+      "name" : "TranDtDrLast180DCnt"
+    },
+    "freshness" : "P2D",
+    "description" : "Transaction count of direct debit transactions in the last 180 days for SAP accounts.\nIncludes transactions with Transaction Category Description = 'Direct Debits' and Customer Initiated Transaction Flag = 'Y'.\nTransaction Source System Code is 'PJN' (Payment Journal)."
+  }, {
+    "type" : {
+      "type" : "String",
+      "limit" : 50
+    },
+    "omnia" : {
+      "name" : "cep_aar.ycs_acct_type"
+    },
+    "spine" : {
+      "name" : "YCS_ACCT_TYPE"
+    },
+    "pega" : {
+      "name" : "TMCAccountType"
+    },
+    "freshness" : "P2D",
+    "description" : "Travel Money Card Account Card Type (like: Master for Acct, Primary and Secondary for Cards)"
+  } ]
+}
