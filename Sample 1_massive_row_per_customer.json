@@ -1,0 +1,186 @@
+{
+  "CustomerId": "3362309",
+  "AgeInMonth": 363,
+  "FirstName":"John",
+  "LastName":"Smith",
+  "ContactDetails":
+  [
+    {
+      "Type":"Email",
+      "Value":"john.smith@gmail.com",
+      "Valid":"Y",
+      "Preferred":"N"
+    },
+    {
+      "Type":"Email",
+      "Value":"john.smith@yahoo.com",
+      "Valid":"Y",
+      "Preferred":"Y"
+    },
+    {
+      "Type":"Mobile",
+      "Value":"+61433123456",
+      "Valid":"Y",
+      "Preferred":"N"
+    },
+    {
+      "Type":"Home",
+      "Value":"0298761234",
+      "Valid":"N",
+      "Preferred":"N"
+    },
+    {
+      "Type":"Home",
+      "Value":"0298760000",
+      "Valid":"Y",
+      "Preferred":"N"
+    },
+    {
+      "Type":"Home Address",
+      "AddressLine1":"1 Darling St",
+      "AddressLine2":"",
+      "City":"Sydney",
+      "State":"NSW",
+      "PostCode":2000,
+      "CountryCode":"AU",
+      "Valid":"Y",
+      "Preferred":"N"
+    },
+    {
+      "Type":"Business Address",
+      "AddressLine1":"PO Box 100",
+      "AddressLine2":"",
+      "City":"Sydney",
+      "State":"NSW",
+      "PostCode":2000,
+      "CountryCode":"AU",
+      "Valid":"Y",
+      "Preferred":"N"
+    }
+    ],
+  "Preferences":
+  [
+   {
+    "Type":"STLNegativeBalance",
+    "Value":"Y"
+   },
+   {
+    "Type":"Push Device",
+    "Value":"Y"
+   },
+   {
+    "Type":"Push - Alerts",
+    "Value":"Y"
+   },
+   {
+    "Type":"Push - Insights",
+    "Value":"N"
+   }
+    ],
+  "Accounts":
+  [
+    {
+    "AccountId": "211010311234",
+    "CIFProductCode":"DDA",
+    "RoleCode":["BCA010","BCA030"],
+    "AccountL6ProductDesc":"Everyday Offset Account",
+    "AccountL6ProductCode":"EVOF0000",
+    "AccountOpenDate":"2014-09-14",
+    "AccountCloseDate":null,
+    "AccountBlance":0,
+    "AccountBlanceDate":"2019-11-05",
+    "AccountBSB":"2000"
+  },
+    {
+     "AccountId": "5217291812341234",
+    "CIFProductCode":"MCD",
+    "RoleCode":["BCA040","BCA030"],
+    "AccountL6ProductDesc":"Diamond Cards",
+    "AccountL6ProductCode":"DIAMONDCD_05",
+    "AccountOpenDate":"2019-03-22",
+    "AccountCloseDate":null,
+    "AccountBlance":1200.99,
+    "AccountBlanceDate":"2019-11-05",
+    "AccountBSB":"2136",
+    "HashedCardExpiry":"ner0RC7oAhiav73cTfPQoT0LHBkmwvr+5Ugz8TG1KAafCjSDHbOEj0AMFqA1veiv0jWzTn+o2BoKBPKhFoNEKZLccEk0d+vLDwhzP7e7rb9AJTavyg0pvzrDalPfYhcORM1EdJC0eu8cn2cc2W1ijNbTeblf+wVXNgXQg="
+    },
+    {
+     "AccountId": "463401234",
+    "CIFProductCode":"LAH",
+    "RoleCode":["BCA010","BCA030","ZSEPRO"],
+    "AccountL6ProductDesc":"Variable Rate Loans",
+    "AccountL6ProductCode":"VARIRATELOAN_05",
+    "AccountOpenDate":"2017-08-30",
+    "AccountCloseDate":null,
+    "AccountBlance":-302557.1,
+    "AccountBlanceDate":"2019-11-01",
+    "AccountBSB":"2105",
+    "OriginatedStaffId":"001234",
+    "OriginalLoanTerm":360,
+    "OriginalLoanAmount":500000
+    }
+    ],
+    "Opportunity":
+    [
+      {
+      "OpportunityGUID":"12165F45E50B1ED9BDBB440BB350CD2F",
+      "OpportunityStartDate":"2019-10-23 03:22:19",
+      "OpportunityEndDate":null,
+      "OpportunityDesc":"REVIEW: HOME SEEKER - PROPERTY SEARCH",
+      "OpportunityLastUpdateBy":"00331122",
+      "OpportunityLastUpdateDate":"2019-10-24 13:22:19",
+      "OpportunityOwnerStaff":"00331122",
+      "OpportunityOwnerDepartment":"50216936",
+      "OpportunityStatusCode":"64",
+      "Activities":
+      [
+        {
+          "GUID":"12165F45E50B1ED9BDBB448C179DCD2F",
+          "StartDate":"2019-10-23 13:22:19",
+          "EndDate":"2019-10-23 14:22:19",
+          "Desc":"REVIEW: HOME SEEKER - PROPERTY SEARCH",
+          "StatusCode":"87"
+        },
+        {
+          "GUID":"12165F45E50B1ED9BDBB448C17ABC123",
+          "StartDate":"2019-10-23 13:23:19",
+          "EndDate":null,
+          "Desc":"Follow-up Call",
+          "StatusCode":"81"
+        }
+        ],
+        "OpportunityItem":
+        {
+          "GUID":"12165F45E50B1ED9BDBB440CF7ABC123",
+          "StartDate":"2019-10-23 03:22:19",
+          "EndDate":null,
+          "Desc":"HOME LOAN - NEW ACCOUNT",
+          "StatusCode":"84"
+        }
+    },
+    {
+      "OpportunityGUID":"12165F45E50B1ED9BDBB4401234ABCD",
+      "OpportunityStartDate":"2019-11-03 03:22:19",
+      "OpportunityEndDate":null,
+      "OpportunityDesc":"Financial Planning Appointment",
+      "OpportunityLastUpdateBy":"00113422",
+      "OpportunityLastUpdateDate":"2019-11-03 03:22:19",
+      "OpportunityOwnerStaff":"00113422",
+      "OpportunityOwnerDepartment":"001233926",
+      "OpportunityStatusCode":"71",
+      "Activities":
+      [
+        ],
+        "OpportunityItem":
+        {
+          "GUID":"12165F45E50B1ED9BDBB440CF7ABC123",
+          "StartDate":"2019-10-23 03:22:19",
+          "EndDate":null,
+          "Desc":"Introduce to CFP",
+          "StatusCode":"84"
+        } 
+    }
+      ]
+   
+  
+}
